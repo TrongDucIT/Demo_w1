@@ -1,0 +1,340 @@
+{
+    "adress": [
+        {
+            "id": 90000,
+            "name": "An Giang"
+        },
+        {
+            "id": 26000,
+            "name": "Bắc Giang"
+        },
+        {
+            "id": 23000,
+            "name": "Bắc Kạn"
+        },
+        {
+            "id": 97000,
+            "name": "Bạc Liêu"
+        },
+        {
+            "id": 16000,
+            "name": "Bắc Ninh"
+        },
+        {
+            "id": 78000,
+            "name": "Bà Rịa - Vũng Tàu"
+        },
+        {
+            "id": 86000,
+            "name": "Bến Tre"
+        },
+        {
+            "id": 55000,
+            "name": "Bình Định"
+        },
+        {
+            "id": 75000,
+            "name": "Bình Dương"
+        },
+        {
+            "id": 67000,
+            "name": "Bình Phước"
+        },
+        {
+            "id": 77000,
+            "name": "Bình Thuận"
+        },
+        {
+            "id": 98000,
+            "name": "Cà Mau"
+        },
+        {
+            "id": 94000,
+            "name": "Cần Thơ"
+        },
+        {
+            "id": 21000,
+            "name": "Cao Bằng"
+        },
+        {
+            "id": 50000,
+            "name": "Đà Nẵng"
+        },
+        {
+            "id": 64000,
+            "name": "Đắk Lắk"
+        },
+        {
+            "id": 63000,
+            "name": "Đắk Lắk"
+        },
+        {
+            "id": 65000,
+            "name": "Đắk Nông"
+        },
+        {
+            "id": 32000,
+            "name": "Điện Biên"
+        },
+        {
+            "id": 76000,
+            "name": "Đồng Nai"
+        },
+        {
+            "id": 81000,
+            "name": "Đồng Tháp"
+        },
+        {
+            "id": 62000,
+            "name": "Gia Lai"
+        },
+        {
+            "id": 61000,
+            "name": "Gia Lai"
+        },
+        {
+            "id": 20000,
+            "name": "Hà Giang"
+        },
+        {
+            "id": 18000,
+            "name": "Hà Nam"
+        },
+        {
+            "id": 45000,
+            "name": "Hà Tĩnh"
+        },
+        {
+            "id": 46000,
+            "name": "Hà Tĩnh"
+        },
+        {
+            "id": 3000,
+            "name": "Hải Dương"
+        },
+        {
+            "id": 4000,
+            "name": "Hải Phòng"
+        },
+        {
+            "id": 5000,
+            "name": "Hải Phòng"
+        },
+        {
+            "id": 10000,
+            "name": "Hà Nội"
+        },
+        {
+            "id": 14000,
+            "name": "Hà Nội"
+        },
+        {
+            "id": 95000,
+            "name": "Hậu Giang"
+        },
+        {
+            "id": 36000,
+            "name": "Hòa Bình"
+        },
+        {
+            "id": 70000,
+            "name": "TP. Hồ Chí Minh"
+        },
+        {
+            "id": 74000,
+            "name": "TP. Hồ Chí Minh"
+        },
+        {
+            "id": 17000,
+            "name": "Hưng Yên"
+        },
+        {
+            "id": 57000,
+            "name": "Khánh Hòa"
+        },
+        {
+            "id": 91000,
+            "name": "Kiên Giang"
+        },
+        {
+            "id": 92000,
+            "name": "Kiên Giang"
+        },
+        {
+            "id": 60000,
+            "name": "Kon Tum"
+        },
+        {
+            "id": 30000,
+            "name": "Lai Châu"
+        },
+        {
+            "id": 66000,
+            "name": "Lâm Đồng"
+        },
+        {
+            "id": 25000,
+            "name": "Lạng Sơn"
+        },
+        {
+            "id": 31000,
+            "name": "Lào Cai"
+        },
+        {
+            "id": 82000,
+            "name": "Long An"
+        },
+        {
+            "id": 83000,
+            "name": "Long An"
+        },
+        {
+            "id": 7000,
+            "name": "Nam Định"
+        },
+        {
+            "id": 43000,
+            "name": "Nghệ An"
+        },
+        {
+            "id": 44000,
+            "name": "Nghệ An"
+        },
+        {
+            "id": 8000,
+            "name": "Ninh Bình"
+        },
+        {
+            "id": 59000,
+            "name": "Ninh Thuận"
+        },
+        {
+            "id": 35000,
+            "name": "Phú Thọ"
+        },
+        {
+            "id": 156000,
+            "name": "Phú Yên"
+        },
+        {
+            "id": 47000,
+            "name": "Quảng Bình"
+        },
+        {
+            "id": 51000,
+            "name": "Quảng Nam"
+        },
+        {
+            "id": 52000,
+            "name": "Quảng Nam"
+        },
+        {
+            "id": 53000,
+            "name": "Quảng Ngãi"
+        },
+        {
+            "id": 54000,
+            "name": "Quảng Ngãi"
+        },
+        {
+            "id": 1000,
+            "name": "Quảng Ninh"
+        },
+        {
+            "id": 2000,
+            "name": "Quảng Ninh"
+        },
+        {
+            "id": 48000,
+            "name": "Quảng Trị"
+        },
+        {
+            "id": 96000,
+            "name": "Sóc Trăng"
+        },
+        {
+            "id": 34000,
+            "name": "Sơn La"
+        },
+        {
+            "id": 80000,
+            "name": "Tây Ninh"
+        },
+        {
+            "id": 6000,
+            "name": "Thái Bình"
+        },
+        {
+            "id": 24000,
+            "name": "Thái Nguyên"
+        },
+        {
+            "id": 40000,
+            "name": "Thanh Hóa"
+        },
+        {
+            "id": 42000,
+            "name": "Thanh Hóa"
+        },
+        {
+            "id": 49000,
+            "name": "Thừa Thiên Huế"
+        },
+        {
+            "id": 84000,
+            "name": "Tiền Giang"
+        },
+        {
+            "id": 87000,
+            "name": "Trà Vinh"
+        },
+        {
+            "id": 22000,
+            "name": "Tuyên Quangg"
+        },
+        {
+            "id": 85000,
+            "name": "Vĩnh Longg"
+        },
+        {
+            "id": 15000,
+            "name": "Vĩnh Phúc"
+        },
+        {
+            "id": 15000,
+            "name": "Yên Bái"
+        }
+    ],
+    "mk": [
+        {
+            "id": 1,
+            "name": "Ducnt1",
+            "email": "abc1@gmail.com",
+            "mk": "123"
+        },
+        {
+            "id": 2,
+            "name": "Hungth",
+            "email": "abc12@gmail.com",
+            "mk": "456"
+        },
+        {
+            "id": 3,
+            "name": "Hakh",
+            "email": "abc123@gmail.com",
+            "mk": "789"
+        },
+        {
+            "id": 4,
+            "name": "Minhbc",
+            "email": "abc1234@gmail.com",
+            "mk": "10jq"
+        },
+        {
+            "id": 5,
+            "name": "Nhatnt",
+            "email": "abc12345@gmail.com",
+            "mk": "qkat"
+        }
+    ]
+}

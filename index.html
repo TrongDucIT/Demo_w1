@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ff28637293.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Hải Phòng Quê Tôi</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-bar">
+            <i class="fa-solid fa-bars"></i>
+            <ul>
+                <li style="--x:1;"><a href="./src/trangchu/trangchu.html">Trang chủ</a></li>
+                <li style="--x:2;"><a href="">Đặc điểm</a></li>
+                <li style="--x:3;"><a href="">Về chúng tôi</a></li>
+                <li style="--x:4;"><a href="">Bộ sưu tập</a></li>
+                <li style="--x:5;"><a href="">Đánh giá</a></li>
+                <li style="--x:6;"><a href="">Liên hệ</a></li>
+
+            </ul>
+        </div>
+        <div class="video-container">
+            <video src="video/hp.mp4" autoplay muted loop></video>
+        </div>
+
+        <div class="header-conten">
+            <h1>Khám phá</h1>
+            <p>Xách ba lô và đi</p>
+            <form id="bookingForm">
+                <h1>Mùa thu này bạn muốn đến Vĩnh Bảo không nhỉ ?</h1>
+                <p>Địa điểm</p>
+                <select id="destinationSelect">
+                    <option value="#">Chọn địa điểm</option>
+                    <option value="Hiệp Hòa">Hiệp Hòa</option>
+                    <option value="Hùng Tiến">Hùng Tiến</option>
+                    <option value="Vĩnh Long">Vĩnh Long</option>
+                    <option value="Thắng Thủy">Thắng Thủy</option>
+                    <option value="Khu phố Đông Thái">Khu phố Đông Thái</option>
+                    <option value="Hưng Nhân">Hưng Nhân</option>
+                    <option value="Lý Học">Lý Học</option>
+                </select>
+                <p>Số người</p>
+                <input type="number" id="peopleCountInput" min="1" max="20" placeholder="Bạn đi bao nhiêu người">
+                <p>Ngày đi</p>
+                <input type="date" id="departureDateInput">
+                <p>Ngày về</p>
+                <input type="date" id="returnDateInput">
+                <button class="btn" id="bookingButton">Đặt lịch</button>
+                <a href="#" id="reminderIcon"><i class="far fa-bell"></i></a>
+            </form>
+
+            <div id="reminderInfo" class="hidden">
+                <p id="reminderMessage"></p>
+            </div>
+        </div>
+    </header>
+    <!-- ---------------------------NICE PLACE--------------------------->
+    <section class="nice-place">
+        <div class="container">
+            <h1 class="h1-style">Địa điểm nổi bật</h1>
+            <div class="nice-place-content row">
+                <div class="nice-place-item">
+                    <div class="nice-place-img">
+                        <img src="image/dtrang.jpg" alt="">
+                    </div>
+                    <div class="nice-place-text">
+                        <h2>Tour Tham Quan & Xin Chữ Đền Trạng</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>- Đền Trạng Trình Nguyễn Bỉnh Khiêm quần thể di tích với 10 điểm
+                                tham quan, ở giữa không gian rộng lớn, thoáng mát.
+                                <br>- Nơi đây thực sự là một điểm du lịch văn hóa tâm linh độc đáo cho du khách thập
+                                phương khi đến với Hải Phòng.
+                                <br>- Nơi đây thực sự là một điểm du lịch văn hóa tâm linh độc đáo cho du khách khi đến
+                                với đất cảng Hải Phòng.
+                            </p>
+                            <button class="btn">Mua Tour</button>
+                    </div>
+                </div>
+                <div class="nice-place-item">
+                    <div class="nice-place-img">
+                        <img src="image/bhroi.webp" alt="">
+                    </div>
+                    <div class="nice-place-text">
+                        <h2>Tour xem Tạc Tượng & Múa Rối Cạn Làng Bảo Hà </h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>- Cách trung tâm thành phố Hải Phòng 30km, làng Bảo Hà-xã Đồng Minh-huyện Vĩnh Bảo-thành
+                                phố
+                                Hải Phòng <br>- Vốn nổi tiếng với nghề tạc tượng từ thế kỷ XVI và môn nghệ thuật múa rối
+                                cạn
+                                đã trải qua 7 đời.<br>- Ý thức được trách nhiệm bảo tồn "di sản" tổ tiên, người
+                                dân
+                                làng Bảo Hà đã tìm nhiều cách đầu tư, phát triển nghề truyền.
+                            </p>
+                            <button class="btn">Mua Tour</button>
+                    </div>
+                </div>
+                <div class="nice-place-item">
+                    <div class="nice-place-img">
+                        <img src="image/dinhNm.jpg" alt="">
+                    </div>
+                    <div class="nice-place-text">
+                        <h2>Tour Thăm Đình Nhân Mục & Xem Múa Rối Nước</h3>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>- Đình Nhân Mục là ngôi đình khá bề thế, được xây dựng từ thế kỷ XVII.<br>- Trước mặt là
+                                sân đình rất rộng, có một cái hồ nhỏ để diễn rối nước trong các ngày lễ hội.<br>- Mái
+                                đình không cao lắm nhưng các đầu đao cong vút, trên đó là hình các con nghê hình thù rất
+                                dữ tợn.
+                            </p>
+                            <button class="btn">Mua Tour</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- -----------------------------ABOUT------------------------------>
+    <section class="about">
+        <div class="container">
+            <h1 class="h1-style">About</h1>
+            <div class="about-content row">
+                <div class="about-content-left">
+                    <img src="image/bdvb.jpg" alt="">
+
+                </div>
+                <div class="about-content-right">
+                    <h2>Bạn biết gì về Vĩnh Bảo chưa ?</h2>
+                    <p>Vĩnh Bảo là thị trấn huyện lỵ của huyện Vĩnh Bảo, thành phố <strong>Hải Phòng</strong>,
+                        <strong>Việt Nam</strong>.
+
+                        <br>Thị trấn Vĩnh Bảo có diện tích <strong>3,05 km²</strong>, dân số năm <strong>>1999</strong>
+                        là <strong>7.540 người</strong>, mật độ dân số đạt
+                        <strong>2.472 người/km²</strong>.
+
+                        <br>Theo thống kê năm <strong>2019</strong>, thị trấn Vĩnh Bảo có diện tích <strong>3,05
+                            km²</strong>, dân số là <strong>8.435 người, mật
+                            độ dân số đạt <strong>2.766</strong>
+                            người/km².
+                    </p>
+                    <button class="btn">Tìm Hiểu Thêm</button>
+
+                </div>
+            </div>
+            <div class="service row">
+                <div class="service-item">
+                    <img src="image/ht.png" alt="">
+                    <p>Đặt phòng</p>
+                </div>
+                <div class="service-item">
+                    <img src="image/dvv.webp" alt="">
+                    <p>Dịch vụ 24/7</p>
+                </div>
+                <div class="service-item">
+                    <img src="image/gb.png" alt="">
+                    <p>Hướng dẫn</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -----------------------------TOUR------------------------------->
+    <section class="tour">
+        <div class="container">
+            <h1 class="h1-style">Tour du lịch Hải Phòng 2023</h1>
+            <div class="tour-content row">
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="image/bthp.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2>Bảo tàng Hải Phòng</h2>
+                        <p>Bảo tàng Hải Phòng không chỉ là nơi để du khách tham quan, tìm hiểu về lịch sử và chiêm
+                            ngưỡng hiện vật quý hiếm mà nơi
+                            đây còn là điểm du lịch văn hóa, vãn cảnh lý tưởng.</p>
+                        <button class="btn">Khám phá</button>
+                    </div>
+                </div>
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="image/doson.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2>Đồ Sơn Hải Phòng</h2>
+                        <p>Đồ Sơn Hải Phòng từ lâu đã được biết đến là một điểm du lịch nghỉ dưỡng nổi tiếng đối với du
+                            khách, đặc biệt là trong
+                            những dịp hè. Giới thiệu về Đồ Sơn Hải Phòng chắc chắn là cẩm nang hữu ích cho những người
+                            đam mê “xê dịch” hoặc du
+                            khách lần đầu tiên đến với Đồ Sơn.</p>
+                        <button class="btn">Khám phá</button>
+                    </div>
+                </div>
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="image/btbd.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2>Dinh Vua Bảo Đại</h2>
+                        <p>Biệt thự Bảo Đại ở Đồ Sơn Hải Phòng là công trình được phục dựng theo biệt thự gốc. Với kiến
+                            trúc độc đáo, không gian
+                            cây xanh, đây là điểm tham quan lịch sử thú vị khi đến với đất cảng.</p>
+                        <button class="btn">Khám phá</button>
+                    </div>
+                </div>
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="image/tlong.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2>Tháp Tường Long</h2>
+                        <p>Đồ Sơn là địa điểm du lịch trọng yếu của Hải Phòng với nhiều danh lam thắng cảnh tuyệt đẹp.
+                            Nơi đây còn nổi tiếng với
+                            tháp Tường Long - di tích lịch sử văn hóa với tuổi đời lên đến 10 thế kỷ.</p>
+                        <button class="btn">Khám phá</button>
+                    </div>
+                </div>
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="image/longchau.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2>Đảo Long Châu</h2>
+                        <p>Đảo Long Châu là một trong những hòn đảo giữ vai trò chiến lược quan trọng của nước ta. Vốn
+                            không được khai thác quá
+                            nhiều để phục vụ du lịch nhưng hòn đảo này vẫn là một điểm đến hấp dẫn dành cho những ai yêu
+                            thích trải nghiệm.</p>
+                        <button class="btn">Khám phá</button>
+                    </div>
+                </div>
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="image/catba.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2>Đảo Cát Bà</h2>
+                        <p>Đảo Cát Bà (hay còn gọi là đảo Ngọc) là hòn đảo được thiên nhiên ưu đãi, có nhiều tiềm năng
+                            để phát triển du lịch. Tuy
+                            được biết đến từ lâu nhưng Cát Bà vẫn giữ được nét tự nhiên nhờ sự biệt lập của mình.</p>
+                        <button class="btn">Khám phá</button>
+                    </div>
+                </div>
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="image/bachlv.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2>Đảo Bạch Long Vĩ</h2>
+                        <p>Đảo Bạch Long Vĩ là một trong những hòn đảo còn giữ được nét hoang sơ, yên bình vốn có. Đây
+                            cũng là hòn đảo được thiên
+                            nhiên ưu ái ban tặng nhiều thắng cảnh tuyệt đẹp. Nếu có cơ hội, hãy đến đảo Bạch Long Vĩ một
+                            lần, chắc chắn những điều
+                            thú vị nơi đây sẽ không làm bạn thất vọng.</p>
+                        <button class="btn">Khám phá</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -----------------------------REVIEW-------------------------- -->
+    <section class="review">
+        <div class="container">
+            <h1 class="h1-style">Phản Hồi</h1>
+            <div class="review-content row">
+                <div class="review-item">
+                    <div class="review-item-text">
+                        <img src="image/chat.png" alt="">
+                        <p><span>&ldquo;</span>Hải Phòng là vùng đất đầu sóng, ngọn gió, “phên dậu” phía Đông của đất
+                            nước, có vị thế chiến lược trong toàn bộ tiến
+                            trình đấu tranh dựng nước và giữ nước của dân tộc ta.<span>&ldquo;</span></p>
+                    </div>
+                    <div class="review-item-img row">
+                        <img src="image/t1.jpg" alt="">
+                        <div class="review-item-img-text">
+                            <h2>Ngô Sỹ Anh</h2>
+                            <p>Ngày 18/07/2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-item">
+                    <div class="review-item-text">
+                        <img src="image/chat.png" alt="">
+                        <p><span>&ldquo;</span>Hải Phòng hiện lưu giữ nhiều nét hấp dẫn về kiến trúc, bao gồm kiến trúc
+                            truyền thống với các chùa, đình, miếu cổ và
+                            kiến trúc tân cổ điển Pháp tọa lạc trên các khu phố cũ.<span>&ldquo;</span></p>
+                    </div>
+                    <div class="review-item-img row">
+                        <img src="image/g1.jpg" alt="">
+                        <div class="review-item-img-text">
+                            <h2>Lê Minh Hương</h2>
+                            <p>Ngày 21/03/2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-item">
+                    <div class="review-item-text">
+                        <img src="image/chat.png" alt="">
+                        <p><span>&ldquo;</span>Được biết đến với mỹ danh Thành phố Hoa Phượng Đỏ. Không chỉ là một thành
+                            phố cảng công nghiệp, Hải Phòng còn là một
+                            trong những nơi có tiềm năng du lịch rất lớn cho du khách đến tham quan.<span>&ldquo;</span>
+                        </p>
+                    </div>
+                    <div class="review-item-img row">
+                        <img src="image/t2.jpeg" alt="">
+                        <div class="review-item-img-text">
+                            <h2>Bùi Hoàng Anh</h2>
+                            <p>Ngày 05/04/2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------------------SIGN_UP--------------------------- -->
+    <section class="sign-up">
+        <h1 class="h1-style">Đăng nhập</h1>
+        <div class="sign-up-content">
+            <input type="tel" id="phoneNumber" name="phoneNumber" required placeholder="Nhập số của bro vô đây">
+            <button id="submitButton" class="btn">Sumbit</button>
+        </div>
+    </section>
+    <!-- -------------------------CONTACT----------------------------- -->
+    <section class="contact">
+        <div class="container">
+            <h1 class="h1-style">Liên hệ</h1>
+            <div class="contact-content-top row">
+                <div class="contact-content-item">
+                    <input type="text" placeholder="Tên">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="contact-content-item">
+                    <input type="tel" placeholder="Số điện thoại" maxlength="10" oninput="validatePhoneNumber()">
+                    <div class="contact-content-item-diachi">
+                        <input type="text" placeholder="Mã bưu chính" id="inputId" oninput="onInputChange()">
+                        <p>Address: <span id="outputName"></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-content-bottom">
+                <textarea placeholder="Nội dung"></textarea>
+                <button class="btn" id="sendButton">Send</button>
+            </div>
+            <div class="user-input-summary" id="summary"></div>
+        </div>
+
+    </section>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+</body>
+
+</html>

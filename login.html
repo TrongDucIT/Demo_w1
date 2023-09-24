@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="back">
+        <i id="iconBack" class="fa-solid fa-rotate-left"></i>
+    </div>
+    <div id="wrapper">
+        <form action="" id="form-login">
+
+            <h1 class="form-heading">Login</h1>
+            <p>Alo: <span id="phoneNumberDisplay"></span></p>
+            <div class="form-group">
+                <i class="fa-solid fa-user"></i>
+                <input type="email" class="form-input" placeholder="Email" id="email" required>
+            </div>
+            <div class="form-group">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" class="form-input" placeholder="Password" id="password" required>
+                <div class="eye">
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+            </div>
+            <button type="submit" class="form-submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://kit.fontawesome.com/ff28637293.js" crossorigin="anonymous"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+font-family: "Times New Roman", Times, serif;
+}
+ul{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+header{
+    position: relative;
+}
+.header-bar i {
+    position: fixed;
+    margin: 12px;
+    font-size: 35px;
+    color: #6DBFE2;
+    cursor: pointer;
+    z-index: 1;
+}
+.header-bar ul {
+    position: fixed;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    padding: 150px 0 0 50px;
+    display: none;
+    opacity: 0;
+    z-index: 1;
+    background: none;
+}
+.header-bar ul.active{
+    display: block;
+    opacity: 1;
+}
+@keyframes fade {
+    0%{
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+}
+.header-bar ul li {
+    margin-bottom: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    animation: fade 0.3s linear backwards;
+    animation-delay: calc(0.3s * var(--x));
+}
+.header-bar ul li a{
+    display: block;
+    background-color: #6DBFE2;
+    padding: 12px;
+    transition: all 0.3s ease;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    color: white;
+}
+.header-bar ul li a:hover{
+    color: red;
+}
+/* styles.css */
+body{
+    height: 100vh;
+}
+.container{
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+}
+.main{
+    height: 100%;
+    margin-bottom: 20px;
+}
+.list-img{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+.list-img div{
+    flex: 1;
+    padding: 5px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.control{
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    color: white;
+    transform: translateY(50%);
+}
+.prev{
+    left: 50px;
+    position: absolute;
+    top: 260px;
+}
+.next{
+    right: 50px;
+    position: absolute;
+    top: 260px;
+}
+.activee{
+    border: 2px solid rgb(236, 147, 147);
+}
+.slide-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+/* -------- */
+.logo img {
+    
+    width: 50px;
+    height: 50px;
+    transform: translateX(140px); /* Di chuyển logo sang trái 100px */
+    transition: transform 0.5s ease-in-out;
+}
+/*  */
+.btn{
+    height: 30px;
+    width: 80px;
+    background-color: #6DBFE2;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+.btn:hover{
+    background-color: orange;
+}
+/*  */
+nav{
+    background-color: white;
+}
+nav ul{
+    display: flex;
+}
+
+
+.logo ul {
+    align-items: center;
+}
+
+.logo ul li {
+    padding-top: 10px;
+    display: inline-block;
+    padding-right: 150px;
+    padding-bottom: 20px;
+}
+.logo ul li input{
+    margin-right: 5px;
+    width: 250px;
+}
+.logo ul li i{
+    margin-right: 5px;
+}
+.option ul li{
+    display: flex;
+    padding-left: 80px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+}
+
+.option ul li i{
+    margin-right: 5px;
+}
+
+.logout-trigger {
+    position: relative;
+    cursor: pointer;
+}
+
+.logout-trigger a {
+    text-decoration: none; /* Loại bỏ gạch chân của liên kết */
+    color: #000; /* Màu chữ cho liên kết */
+    margin-left: 5px; /* Khoảng cách giữa biểu tượng và văn bản */
+    display: flex; /* Hiển thị theo kiểu flex để căn giữa biểu tượng và văn bản */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.lbutton {
+    display: none; /* Ẩn nút ban đầu */
+    position: absolute; /* Đặt vị trí tuyệt đối để hiển thị lên trên nút */
+    top: 60%; /* Đặt vị trí top ở dưới li */
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.logout-trigger:hover .lbutton {
+    display: flex; /* Hiển thị khi hover vào li */
+    flex-direction: row; /* Hiển thị các nút cùng hàng ngang */
+    gap: 20px; /* Khoảng cách 20px giữa các nút */
+}
+
+.logout-button,
+.login-button {
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
